@@ -21,7 +21,6 @@ public class StackUsingLinkedList{
         Node newnode = new Node(ele);
         if(head==null){
             head=newnode;
-            return;
         }
         else{
             Node temp=head;
@@ -87,6 +86,7 @@ int pop() {
          int size=sc.nextInt();
          int ec=0;int oc=0;
          StackUsingLinkedList n=new StackUsingLinkedList(size);
+          System.out.println("Enter Array elements to push");
          for( int i=0;i<size;i++){
             n.push(sc.nextInt());
          }
